@@ -19,7 +19,7 @@ body {
 /*header*/
 .header{
   position: relative;
-  background-color:rgb(196, 43, 101);
+  background-color:white;
   display: flex;
   flex-direction: column;
 }
@@ -28,11 +28,234 @@ body {
  margin:auto;
 }
 .header-nav{
-  width: 100%;
   margin:auto;
 }
 .header-nav-item{
+  color:black;
+  font-size: 2rem;
+}
+/*shopcontent*/
+.Shopcontent{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.Shopcontent-row{
+  display: flex;
+  flex-direction: row;
+}
+.Shopcontent-online-box{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 10rem;
+  height: 10rem;
+  background-color: cadetblue;
+  margin: 1rem;
+}
+.Shopcontent-online-text{
+  position: absolute; 
+  top: 0;             
+  bottom: 0;           
+  left: 0;        
+  right: 0;
+  margin: auto; 
+  width: 4rem;
+  height: 4rem;
+}
+.Shopcontent-online-switch{
+  width: 2rem;
+  position: absolute; 
+  top: 6rem;             
+  bottom: 0;           
+  left: 0;        
+  right: 0;
+  margin: auto; 
+}
+.Shopcontent-online-order{
+  position: absolute; 
+  top: 0;             
+  bottom: 0;           
+  left: 0;        
+  right: 0;
+  margin: auto; 
+  width: 4rem;
+  height: 6rem;
+  color:black
+}
+.Shopcontent-online-order-dis{
+  position: absolute; 
+  top: 0;             
+  bottom: 0;           
+  left: 0;        
+  right: 0;
+  margin: auto; 
+  width: 4rem;
+  height: 6rem;
+  color:gray
+}
+/*ShopOrder*/
+.ShopOrder-header{
+  position: relative;
+  margin: auto;
+  width: 50%;
+  height: 10rem;
+  background-color: rgb(196, 43, 101);
+}
+.ShopOrder-title{
+  position: absolute;
+  top: 0;             
+  bottom: 0;           
+  left: 0;        
+  right: 0;
+  margin: auto;
+  width: 16rem;
+  height: 7rem;
+  font-size: 4rem;
   color:white;
-  font-size: 1.1rem;
-  margin-left: 20rem;
+}
+/*ShopOrderCard*/
+.ShopOrderCard{
+  width: 35%;
+  height: 30rem;
+  background-color:lightslategrey;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1;             
+  bottom: 1;           
+  left: 0;        
+  right: 0;
+  margin: auto;
+}
+.ShopOrderCard-row{
+  display: flex;
+  flex-direction: row;
+}
+.ShopOrderCard-row p{
+  color:black;
+  font-size: 1rem;
+  margin-left: 2.2rem;
+  margin-top: 1rem;
+}
+.ShopOrderCard-itemtitle{
+  color:black;
+  font-size: 1.5rem;
+  margin-left: 2.2rem;
+
+}
+.site-card-border-less-wrapper {
+  padding: 30px;
+  background: #ececec;
+  
+}
+.ShopOrderCard-Products{
+  background-color: white;
+}
+.ant-carousel .slick-dots li.slick-active button{
+  background-color: black;
+}
+.ant-carousel .slick-dots li.slick-active button {
+  background-color: gray;
+}
+.ant-carousel .slick-dots li button{
+  background-color: red;
+}
+.ShopOrder-Button{
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+.ShopOrder-Button-item{
+  margin-top: 1rem;
+  margin-left: 1.8rem;
+}
+/*Service*/
+.Service{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.Service-row{
+  display: flex;
+  flex-direction: row;
+}
+.Service-box{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 10rem;
+  height: 10rem;
+  background-color: cadetblue;
+  margin: 1rem;
+}
+.Service-Text{
+  position: absolute; 
+  top: 0;             
+  bottom: 0;           
+  left: 0;        
+  right: 0;
+  margin: auto; 
+  width: 4rem;
+  height: 6rem;
+  color:black
+}
+/*Driver*/
+.Driver{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.Driver-row{
+  display: flex;
+  flex-direction: row;
+}
+.Driver-online-box{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 10rem;
+  height: 10rem;
+  background-color: cadetblue;
+  margin: 1rem;
+}
+.Driver-online-text{
+  position: absolute; 
+  top: 0;             
+  bottom: 0;           
+  left: 0;        
+  right: 0;
+  margin: auto; 
+  width: 4rem;
+  height: 4rem;
+}
+.Driver-online-switch{
+  width: 2rem;
+  position: absolute; 
+  top: 6rem;             
+  bottom: 0;           
+  left: 0;        
+  right: 0;
+  margin: auto; 
+}
+.Driver-online-order{
+  position: absolute; 
+  top: 0;             
+  bottom: 0;           
+  left: 0;        
+  right: 0;
+  margin: auto; 
+  width: 4rem;
+  height: 6rem;
+  color:black
+}
+.Driver-online-order-dis{
+  position: absolute; 
+  top: 0;             
+  bottom: 0;           
+  left: 0;        
+  right: 0;
+  margin: auto; 
+  width: 4rem;
+  height: 6rem;
+  color:gray
 }
