@@ -25,12 +25,7 @@ body {
 }
 .header-logo{
  width: 15rem;
- position: absolute; 
- top: 0;             
- bottom: 0;           
- left: 0;        
- right: 0;
- margin: auto; 
+ margin-inline: auto; 
 }
 .header-nav{
   margin:auto;
