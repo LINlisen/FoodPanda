@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Switch } from 'antd';
+import { Switch,notification  } from 'antd';
 import { useState } from "react";
 
 export default function Driver(){
@@ -14,6 +14,16 @@ export default function Driver(){
     else{
         orderclassName="Driver-online-order-dis"
     }
+    const openNotification = () => {
+        notification.open({
+          message: '尚未上線',
+          description:
+            '請先上線後再點擊',
+          onClick: () => {
+            console.log('Notification Clicked!');
+          },
+        });
+      };
     return(
       <div className="Driver">  
         <div className="Driver-row">
@@ -27,7 +37,7 @@ export default function Driver(){
                   接單頁面
                 </Link>
               ):(
-                <Link to='/' className={orderclassName}>
+                <Link to='/' className={orderclassName} onClick={openNotification}>
                 接單頁面
               </Link>
               )}
@@ -36,12 +46,12 @@ export default function Driver(){
         </div>
         <div className="Driver-row">
           <div className="Driver-online-box">
-                <Link to='DriverMoney' className="Driver-online-order">
+                <Link to='/' className="Driver-online-order">
                   累積獎金
                 </Link>
           </div>
           <div className="Driver-online-box">
-                <Link to='QuestionbyDriver' className="Driver-online-order">
+                <Link to='/' className="Driver-online-order">
                   問題回報
                 </Link>
           </div>

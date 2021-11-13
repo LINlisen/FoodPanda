@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Switch } from 'antd';
+import { Switch,notification } from 'antd';
 import { useState } from "react";
 
 export default function Shopcontent(){
@@ -14,6 +14,16 @@ export default function Shopcontent(){
     else{
         orderclassName="Shopcontent-online-order-dis"
     }
+    const openNotification = () => {
+        notification.open({
+          message: '尚未上線',
+          description:
+            '請先上線後再點擊',
+          onClick: () => {
+            console.log('Notification Clicked!');
+          },
+        });
+      };
     return(
       <div className="Shopcontent">  
         <div className="Shopcontent-row">
@@ -27,7 +37,7 @@ export default function Shopcontent(){
                   訂單頁面
                 </Link>
               ):(
-                <Link to='/' className={orderclassName}>
+                <Link to='/' className={orderclassName} onClick={openNotification}>
                 訂單頁面
               </Link>
               )}
@@ -36,12 +46,12 @@ export default function Shopcontent(){
         </div>
         <div className="Shopcontent-row">
           <div className="Shopcontent-online-box">
-                <Link to='HistoryOrder' className="Shopcontent-online-order">
+                <Link to='/' className="Shopcontent-online-order">
                   歷史訂單
                 </Link>
           </div>
           <div className="Shopcontent-online-box">
-                <Link to='QuestionbyShop' className="Shopcontent-online-order">
+                <Link to='/' className="Shopcontent-online-order">
                   問題回報
                 </Link>
           </div>

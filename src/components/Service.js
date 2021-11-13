@@ -12,19 +12,19 @@ export default function Service(){
                 </Link>
           </div>
           <div className="Service-box">
-              <Link to='Service-driver' className="Service-Text">
+              <Link to='/' className="Service-Text">
                   司機回報
               </Link>
           </div>
         </div>
         <div className="Service-row">
           <div className="Service-box">
-                <Link to='Service-shop' className="Service-Text">
+                <Link to='/' className="Service-Text">
                   商家回報
                 </Link>
           </div>
           <div className="Service-box">
-                <Link to='Service-histroy' className="Service-Text">
+                <Link to='/' className="Service-Text">
                   歷史回報
                 </Link>
           </div>
