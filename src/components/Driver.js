@@ -22,9 +22,16 @@ export default function Driver(){
               <Switch onChange={setSwitch} className="Driver-online-switch"/>
           </div>
           <div className="Driver-online-box">
-              <Link to='DriverOrder' className={orderclassName}>
+              {online?(
+                <Link to='DriverOrder' className={orderclassName}>
                   接單頁面
+                </Link>
+              ):(
+                <Link to='/' className={orderclassName}>
+                接單頁面
               </Link>
+              )}
+              
           </div>
         </div>
         <div className="Driver-row">

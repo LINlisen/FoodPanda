@@ -22,9 +22,16 @@ export default function Shopcontent(){
               <Switch onChange={setSwitch} className="Shopcontent-online-switch"/>
           </div>
           <div className="Shopcontent-online-box">
-              <Link to='ShopOrder' className={orderclassName}>
+              {online?(
+                <Link to='ShopOrder' className={orderclassName}>
                   訂單頁面
+                </Link>
+              ):(
+                <Link to='/' className={orderclassName}>
+                訂單頁面
               </Link>
+              )}
+              
           </div>
         </div>
         <div className="Shopcontent-row">

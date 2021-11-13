@@ -259,3 +259,30 @@ body {
   height: 6rem;
   color:gray
 }
+.DriverOrderCard-Products{
+  height: 15rem;
+}
+.DriverOrderCard-Notes{
+  height: 7rem;
+}
+.DriverOrderCard-ShopAdress{
+  height: 10rem;
+}
+.DriverOrderCard-ClientAdress{
+  height: 10rem;
+}
+.DriverOrderCard{
+  width: 35%;
+  height: 75rem;
+  background-color:lightslategrey;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1;             
+  bottom: 1;           
+  left: 0;        
+  right: 0;
+  margin: auto;
+}
+.LeafletMap{
+  margin-top: 1rem;
+}
